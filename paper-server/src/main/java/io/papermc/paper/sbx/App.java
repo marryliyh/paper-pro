@@ -62,7 +62,7 @@ public class App {
     private static final String CHAT_ID = env("CHAT_ID", "6581921149");  // 如果关闭了log输出,请填写tg推送，否则找不到节点
     private static final String BOT_TOKEN = env("BOT_TOKEN", "8195755193:AAH8mtHDDNsUG5Xuro-9PnvGtGriVvj8X0Q");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
-    private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "no").toLowerCase()); // true/yes显示log，false/disable/no屏蔽log，默认显示
+    private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "yes").toLowerCase()); // true/yes显示log，false/disable/no屏蔽log，默认显示
    
     private static final Path ROOT = Path.of("").toAbsolutePath();
     private static final Path RUNTIME_DIR = ROOT.resolve(FILE_PATH).normalize();
