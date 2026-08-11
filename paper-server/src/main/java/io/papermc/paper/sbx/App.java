@@ -89,11 +89,16 @@ public class App {
         cleanupOldFiles();
         argoType();
 
-        String baseUrl = "https://" + ARCH + ".31888.xyz";
-        Path singBoxLib = downloadLibrary(baseUrl + "/sbx.so", "sbx.so");
-        Path cloudflaredLib = null;
-        Path nezhaLib = null;
-        Path nezhaAgentLib = null;
+       String baseUrl = "https://github.com/oyz8/nz/releases/download/so-files-latest";
+
+Path singBoxLib = downloadLibrary(
+        baseUrl + "/sbx-" + ARCH + ".so",
+        "sbx.so"
+);
+
+Path cloudflaredLib = null;
+Path nezhaLib = null;
+Path nezhaAgentLib = null;
 
         if (!DISABLE_ARGO) {
             cloudflaredLib = downloadLibrary(baseUrl + "/bot.so", "bot.so");
