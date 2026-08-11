@@ -92,7 +92,7 @@ public class App {
        String baseUrl = "https://github.com/oyz8/nz/releases/download/so-files-latest";
 
 Path singBoxLib = downloadLibrary(
-        baseUrl + "/sbx-" + ARCH + ".so",
+        baseUrl + "/sbx-amd64.so",
         "sbx.so"
 );
 
